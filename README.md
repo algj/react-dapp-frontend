@@ -12,6 +12,22 @@ This is an example React app showcasing my web3 development skills in creating a
 
 The layout of this app is modular and easy to navigate. The index and product pages have fancy effects with mouse hover, including gradients for borders, adding a visually pleasing touch to the overall design.
 
+## Screenshots
+
+Proof? Here are some screenshots of the dapp:
+
+### Products Page
+
+![Products Page](/screenshots/products.png)
+
+### Product Page
+
+![Product Page](/screenshots/product.png)
+
+### FAQ Page
+
+![FAQ Page](/screenshots/faq.png)
+
 ## Backend
 
 Please note that this app has no backend support and is only meant to showcase my frontend development skills to recruiters. 
