@@ -30,6 +30,14 @@ Proof? Here are some screenshots of the dapp:
 
 ## Backend
 
-Please note that this app has no backend support and is only meant to showcase my frontend development skills to recruiters. 
+Please note that this app has no backend support and is only meant to showcase my frontend development skills to recruiters.
 
-Thank you for taking the time to check out my app! If you have any questions or feedback, please feel free to contact me.
+# Ending Note
+
+Thank you for checking out my app! I hope you enjoyed exploring the world of Crypto Staking Contracts.
+
+If you have any questions or feedback, please don't hesitate to reach out to me. You can find my contact information over on my [GitHub profile](https://github.com/algj). Whether you're interested in discussing web3 development, React, or just want to chat about your favorite movies, I'm always happy to hear from fellow developers and enthusiasts.
+
+And remember, this app is just a small example of my skills in React. Since creating it, I've continued to learn and grow as a developer, so if you're impressed now, just wait until you see what I can do with my newfound knowledge!
+
+Thanks again for your time and interest, and I look forward to hearing from you soon!
