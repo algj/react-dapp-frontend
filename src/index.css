@@ -1,0 +1,236 @@
+:root {
+  --color-scheme: dark;
+  --bs-blue: #007bff;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #e83e8c;
+  --bs-red: #d9534f;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #f0ad4e;
+  --bs-green: #4bbf73;
+  --bs-teal: #20c997;
+  --bs-cyan: #1f9bcf;
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-gray: #919aa1;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #f7f7f9;
+  --bs-gray-300: #eceeef;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #919aa1;
+  --bs-gray-700: #55595c;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #1a1a1a;
+  --bs-primary: #1a1a1a;
+  --bs-secondary: #e77224;
+  --bs-success: #4bbf73;
+  --bs-info: #1f9bcf;
+  --bs-warning: #f0ad4e;
+  --bs-danger: #d9534f;
+  --bs-light: #fff;
+  --bs-dark: #343a40;
+  --bs-primary-rgb: 26, 26, 26;
+  --bs-secondary-rgb: 255, 255, 255;
+  --bs-success-rgb: 75, 191, 115;
+  --bs-info-rgb: 31, 155, 207;
+  --bs-warning-rgb: 240, 173, 78;
+  --bs-danger-rgb: 217, 83, 79;
+  --bs-light-rgb: 255, 255, 255;
+  --bs-dark-rgb: 52, 58, 64;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 85, 89, 92;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(90deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #55595c;
+  --bs-body-bg: #fff;
+  --bs-border-width: 1px;
+  --bs-border-style: solid;
+  --bs-border-color: #eceeef;
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+  --bs-border-radius: 0.375rem;
+  --bs-border-radius-sm: 0.25rem;
+  --bs-border-radius-lg: 0.5rem;
+  --bs-border-radius-xl: 1rem;
+  --bs-border-radius-2xl: 2rem;
+  --bs-border-radius-pill: 50rem;
+  --bs-link-color: #ffffff8c;
+  --bs-link-hover-color: #ffffff;
+  --bs-code-color: #e83e8c;
+  --bs-highlight-bg: #fcefdc;
+}
+.btn-black {
+  --bs-btn-color: #ffffff8c;
+  --bs-btn-hover-color: #ffffff;
+}
+.btn, .card, .dropdown-menu, .badge, .modal-content {
+  border-radius: var(--bs-border-radius-lg);
+}
+
+.btn:is(.btn-group-horizontal > .btn):first-child {
+  border-top-left-radius: var(--bs-border-radius-lg);
+  border-bottom-left-radius: var(--bs-border-radius-lg);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right-width: 1px;
+}
+
+.btn:is(.btn-group-horizontal > .btn):not(:first-child):not(:last-child) {
+  border-radius: 0;
+  border-right-width: 1px;
+  border-left-width: 1px;
+}
+
+.btn:is(.btn-group-horizontal > .btn):last-child {
+  border-top-right-radius: var(--bs-border-radius-lg);
+  border-bottom-right-radius: var(--bs-border-radius-lg);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left-width: 1px;
+}
+
+.btn:is(.btn-group-vertical > .btn):first-child {
+  border-top-left-radius: var(--bs-border-radius-lg);
+  border-top-right-radius: var(--bs-border-radius-lg);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-width: 1px;
+}
+
+.btn:is(.btn-group-vertical > .btn):not(:first-child):not(:last-child) {
+  border-radius: 0;
+  border-bottom-width: 1px;
+  border-top-width: 1px;
+}
+
+.btn:is(.btn-group-vertical > .btn):last-child {
+  border-bottom-right-radius: var(--bs-border-radius-lg);
+  border-bottom-left-radius: var(--bs-border-radius-lg);
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-top-width: 1px;
+}
+
+
+
+#outlet-page > * {
+  width: 100vw;
+  opacity: 0;
+  /* transform: scaleY(0.9); */
+  transform-origin: top center;
+}
+
+#outlet-page.pageactive > * {
+  opacity: 1;
+  /* transform: scaleY(1); */
+  transition: opacity 0.16s ease-out, transform 0.16s ease-out;
+}
+
+
+
+html, body {
+  font-family: 'Rajdhani', sans-serif;
+  background-color: #101010;
+  color: #ffffff8c;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#root {
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+a {
+  color: #BEBEBE;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
+.btn-link {
+  text-decoration: none;
+}
+
+.dim-link {
+  transition: opacity .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out, filter .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  opacity: 0.9 !important;
+  filter: brightness(100%);
+}
+.dim-link:focus, .dim-link:hover {
+  opacity: 1 !important;
+  filter: brightness(135%);
+}
+
+
+/* Navbar center fix */
+.navbar-logo-width {
+  width: 152px;
+}
+@media not (min-width: 992px) {
+  .navbar-logo-width {
+    width: 71px;
+  }
+}
+
+.bg-sec {
+  background: linear-gradient(to right, #00bfff, #ff1493);
+  background-size: 400% 400%;
+  animation: gradient-animation 4s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.card-list-anim {
+  opacity: 0;
+  animation: slideIn 0.20s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: perspective(100vmax) translateY(5%) rotateX(-10deg);
+    /* Use perspective, rotateX, rotateY, and scale to create a 3D-like appearance */
+  }
+  to {
+    opacity: 1;
+    transform: perspective(100vmax) translateY(0) rotateX(0);
+    /* End with transform values to bring the element onto the screen */
+  }
+}
+
+.headers-white h1, .headers-white h2, .headers-white h3, .headers-white h4, .headers-white h5, .headers-white h6 {
+  color: white !important;
+}
+.headers-center h1, .headers-center h2, .headers-center h3, .headers-center h4, .headers-center h5, .headers-center h6 {
+  text-align: center;
+}
+
+.bg-grid {
+  background-image: linear-gradient(to right, #00000009 1px, transparent 1px),
+                    linear-gradient(to bottom, #00000009 1px, transparent 1px);
+  background-size: 19px 19px;
+}

@@ -1,0 +1,44 @@
+.bg-banner-animated {
+    animation: banner-anim 10s ease-in-out infinite;
+}
+
+@keyframes banner-anim {
+    0% {
+        background-color: #7e3e13;
+    }
+    50% {
+        background-color: #5c2c2c;
+    }
+    100% {
+        background-color: #7e3e13;
+    }
+}
+
+.banner-pulsating-dot {
+    display: inline-block;
+    animation: pulsate 2s ease-in-out;
+    animation-iteration-count: infinite;
+    opacity: 0.5;
+    width: 6px;
+    height: 6px;
+    margin-right: 4px;
+    background-color: #ffffff8c;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+@keyframes pulsate {
+    0% {
+        opacity: 0.0;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.0;
+    }
+}
